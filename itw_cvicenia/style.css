@@ -1,0 +1,615 @@
+body {
+  margin: 0;
+  font-size: 14px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: medium;
+}
+img,
+table {
+  max-width: 100%;
+}
+.content {
+  padding: 1em 20px;
+  margin: 0 auto;
+}
+.hidden {
+  display: none;
+}
+
+#menu {
+  background: url("img/footer_bg.gif");
+}
+#menu .content {
+  padding-bottom: 0.1em;
+}
+#menu h1 {
+  font-style: italic;
+  margin-bottom: 0;
+  font-size: 65px;
+  margin-top: 0;
+}
+.fixed {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.fas.fa-bars {
+  display: none;
+  color: white;
+}
+#nav li:hover {
+  background-color: #471a04;
+}
+#menu h2 {
+  margin: 0;
+  padding: 0;
+  color: #b6784b;
+}
+#menu a {
+  color: white;
+  text-decoration: none;
+}
+#menu a:hover {
+  color: #b15e23;
+}
+#nav li {
+  display: inline-block;
+  margin: 0;
+  padding-right: 10px;
+}
+#nav li a {
+  position: relative;
+}
+/* #nav li a:hover::after {
+  content: url("img/menu_bullet.gif");
+  display: black;
+  position: absolute;
+  bottom: -120%;
+  right: 0;
+  left: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 14px;
+  height: 14px;
+} */
+#nav a {
+  color: white;
+  text-decoration: none;
+}
+#nav {
+  background-color: #b15e23;
+}
+#nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0 !important;
+}
+#nav .content {
+  padding: 0;
+}
+
+#obsah1 {
+  background: rgb(244, 244, 244);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(230, 230, 230, 1) 100%
+  );
+}
+#obsah1 .content {
+  padding-bottom: 4em;
+}
+#obsah1 h2 {
+  color: #b6784b;
+}
+
+#obsah2 {
+  display: flex;
+}
+#obsah2 .column {
+  width: 50%;
+  margin-right: 2em;
+}
+#SpojenyObsah {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+#SpojenyObsah h2 {
+  color: #b6784b;
+}
+#obsah2 a {
+  color: #3c1f0a;
+  text-decoration: none;
+}
+#obsah2 a:hover {
+  color: #b6784b;
+}
+#obsah2 h3 {
+  border-bottom: 2px dotted #b6784b;
+  margin-top: 0;
+}
+#obsah2 .item {
+  padding-bottom: 2em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+#obsah2 .item img {
+  margin-right: 1em;
+  height: 100%;
+}
+
+#obsah3 table {
+  border: 3px solid black;
+  width: 100%;
+  text-align: center;
+}
+#obsah3 table thead tr {
+  background-color: #d5a17c;
+}
+#obsah3 table thead tr td,
+table thead tr th {
+  text-align: center;
+  color: #656565;
+  border: 2px dotted #3c1f0a;
+  border-bottom: 2px solid black;
+  border-right: 2px solid black;
+}
+#obsah3 table tbody tr td,
+table tbody tr th {
+  color: black;
+  border-top: 1px solid black;
+  border-bottom: 1px solid #656565;
+}
+#obsah3 table tbody tr td:first-child {
+  text-align: left !important;
+}
+
+#obsah4 h2 {
+  color: #b6784b;
+}
+
+#obsah4 .item .flex {
+  margin-bottom: 2em;
+  border-bottom: 2px dotted #b6784b;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+#obsah4 .item h3 {
+  margin: 0;
+}
+#obsah4 .item img {
+  margin-right: 1em;
+  height: 100%;
+}
+#obsah4 a {
+  color: #3c1f0a;
+  text-decoration: none;
+}
+#obsah4 a:hover {
+  color: #b6784b;
+}
+
+#obsah5 {
+  background: url("img/footer_bg.gif");
+  color: white;
+}
+#obsah5 a {
+  text-decoration: none;
+  color: #b6784b;
+}
+#obsah5 a:hover {
+  color: white;
+}
+#obsah5 .content {
+  display: flex;
+}
+
+#obsah5 .content > div {
+  width: 35%;
+  margin-right: 4em;
+  line-height: 1.9;
+}
+#kontakty {
+  padding: 0;
+  list-style: none;
+}
+#kontakty li {
+  justify-content: space-between;
+  display: flex;
+}
+.zoznamImg {
+  list-style-image: url("img/footer_list_bullet.gif");
+  margin: 0;
+}
+
+#SpojenyObsah {
+  display: flex;
+}
+
+.column1 {
+  width: 60%;
+  padding: 2em;
+}
+.column2 {
+  padding: 2em;
+  width: 40%;
+  background: rgb(230, 230, 230);
+  background: linear-gradient(
+    90deg,
+    rgba(230, 230, 230, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+}
+
+@media screen and (max-width: 576px) {
+  html {
+    max-width: 576px;
+  }
+  #nav ul {
+    background-color: #b15e23;
+  }
+  #nav .content li {
+    padding: 1em 20px;
+    font-weight: bold;
+    display: none;
+  }
+  #nav li:first-child {
+    display: block;
+  }
+  .fas.fa-bars {
+    display: block;
+    float: right;
+    font-size: 1rem;
+  }
+  #menu h1 {
+    font-style: normal;
+    padding: 0 20px;
+  }
+  #menu h2 {
+    padding: 0 20px;
+    margin-bottom: 2em;
+  }
+  .content {
+    margin: 0;
+    padding: 0;
+  }
+  #SpojenyObsah {
+    display: block;
+  }
+  #obsah2 {
+    display: block;
+  }
+  #obsah2 .column {
+    width: auto;
+  }
+  .column,
+  .column1,
+  .column2 {
+    width: auto;
+  }
+  #obsah5 .content {
+    display: block;
+  }
+  #obsah5 .content > div {
+    width: auto;
+    margin-right: 0;
+    line-height: 1;
+    padding: 0.5em 20px;
+  }
+  #kontakty {
+    width: 75%;
+  }
+  .zoznamImg {
+    padding: 0 20px;
+  }
+  #obsah3 table thead tr td,
+  table thead tr th {
+    border: none;
+  }
+  #obsah3 table tbody tr td,
+  table tbody tr th {
+    border: none;
+  }
+  #obsah3 table {
+    border: none;
+  }
+
+  #obsah1 h2 {
+    margin: 0;
+    padding: 0.3em 20px;
+    padding-top: 2em;
+  }
+  #obsah1 p {
+    padding: 0 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #nav ul {
+    background-color: #b15e23;
+  }
+  #nav li {
+    font-weight: bold;
+    padding: 1em 20px;
+    display: inline-block;
+  }
+
+  #menu h1 {
+    font-style: normal;
+    padding: 0 20px;
+  }
+  #menu h2 {
+    padding: 0 20px;
+    margin-bottom: 2em;
+  }
+  .content {
+    margin: 0;
+    padding: 0;
+  }
+  #SpojenyObsah {
+    display: block;
+  }
+  #obsah2 {
+    display: block;
+  }
+  #obsah2 .column {
+    width: auto;
+  }
+  .column,
+  .column1,
+  .column2 {
+    width: auto;
+  }
+  #obsah5 .content {
+    display: block;
+    padding-bottom: 2em;
+  }
+  #obsah5 .content > div {
+    width: auto;
+    margin-right: 0;
+    line-height: 1;
+    padding: 0.5em 20px;
+  }
+  #kontakty {
+    width: 100%;
+  }
+  .zoznamImg {
+    padding: 0 20px;
+  }
+  #obsah3 table thead tr td,
+  table thead tr th {
+    border: none;
+  }
+  #obsah3 table tbody tr td,
+  table tbody tr th {
+    border: none;
+  }
+  #obsah3 table {
+    border: none;
+  }
+
+  #obsah1 h2 {
+    margin: 0;
+    padding: 0.3em 20px;
+    padding-top: 2em;
+  }
+  #obsah1 p {
+    padding: 0 20px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #nav ul {
+    background-color: #b15e23;
+  }
+  #nav li {
+    padding: 1em 20px;
+    font-weight: bold;
+  }
+
+  #menu h1 {
+    font-style: normal;
+    padding: 0 20px;
+  }
+  #menu h2 {
+    padding: 0 20px;
+    margin-bottom: 2em;
+  }
+  .content {
+    margin: 0;
+    padding: 0;
+  }
+
+  #obsah2 {
+    display: block;
+  }
+  #obsah2 .column {
+    width: auto;
+  }
+  #kontakty {
+    width: 100%;
+  }
+  .column {
+    width: auto;
+  }
+
+  .zoznamImg {
+    padding: 0 20px;
+  }
+  #obsah3 table thead tr td,
+  table thead tr th {
+    border: none;
+  }
+  #obsah3 table tbody tr td,
+  table tbody tr th {
+    border: none;
+  }
+  #obsah3 table {
+    border: none;
+  }
+
+  #obsah1 h2 {
+    margin: 0;
+    padding: 0.3em 20px;
+    padding-top: 2em;
+  }
+  #obsah1 p {
+    padding: 0 20px;
+  }
+  #obsah5 .content {
+    padding: 0 20px;
+    justify-content: space-between;
+    padding-bottom: 2em;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #nav ul {
+    background-color: #b15e23;
+    padding: 1em 20px;
+  }
+  #nav li {
+    padding: 1em 20px;
+    font-weight: bold;
+  }
+
+  #menu h1 {
+    font-style: normal;
+    padding: 0 20px;
+  }
+  #menu h2 {
+    padding: 0 20px;
+    margin-bottom: 2em;
+  }
+  .content {
+    margin: 0;
+    padding: 0;
+  }
+
+  #obsah2 .column {
+    width: auto;
+  }
+  .column {
+    width: auto;
+  }
+
+  .zoznamImg {
+    padding: 0 20px;
+  }
+  #obsah3 table thead tr td,
+  table thead tr th {
+    border: none;
+  }
+  #obsah3 table tbody tr td,
+  table tbody tr th {
+    border: none;
+  }
+  #obsah3 table {
+    border: none;
+  }
+
+  #obsah1 h2 {
+    margin: 0;
+    padding: 0.3em 20px;
+    padding-top: 2em;
+  }
+  #obsah1 p {
+    padding: 0 20px;
+  }
+  #obsah5 .content {
+    padding: 0 20px;
+    padding-bottom: 2em;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #nav ul {
+    background: #b15e23;
+  }
+  #nav li {
+    font-weight: bold;
+    padding: 1em 20px;
+  }
+
+  #menu h1 {
+    font-style: normal;
+    padding: 0 20px;
+  }
+  #menu h2 {
+    padding: 0 20px;
+    margin-bottom: 2em;
+  }
+  .content {
+    max-width: 960px;
+  }
+
+  #obsah2 .column {
+    width: auto;
+  }
+  .column {
+    width: auto;
+  }
+
+  .zoznamImg {
+    padding: 0 20px;
+  }
+  #obsah3 table thead tr td,
+  table thead tr th {
+    border: none;
+  }
+  #obsah3 table tbody tr td,
+  table tbody tr th {
+    border: none;
+  }
+  #obsah3 table {
+    border: none;
+  }
+
+  #obsah1 h2 {
+    margin: 0;
+    padding: 0.3em 20px;
+    padding-top: 2em;
+  }
+  #obsah1 p {
+    padding: 0 20px;
+  }
+  #obsah5 .content {
+    padding: 0 20px;
+    padding-bottom: 2em;
+  }
+  #kontakty {
+    width: 100%;
+  }
+}
+
+/* SOURCE https://www.w3schools.com/css/css_tooltip.asp */
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip .tooltiptext {
+  width: 120px;
+  top: 175%;
+  left: 50%;
+  margin-left: -60px;
+}
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
